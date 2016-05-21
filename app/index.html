@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!--build:css css/styles.min.css-->
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/teste.css">
+	
+</head>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ChatBy | Network</title>
+	<!-- Tell the browser to be responsive to screen width -->
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+	<!--build:css css/styles.min.css-->
+	<link rel="stylesheet" href="node_modules/admin-lte/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="node_modules/admin-lte/dist/css/AdminLTE.css">
+	<link rel="stylesheet" href="node_modules/admin-lte/dist/css/skins/skin-blue.css">
+	<!--endbuild-->	
+
+	<!-- build:js js/main.min.js -->
+	<script src="node_modules/admin-lte/plugins/jQuery/jQuery-2.2.0.min.js"></script>
+	<script src="node_modules/admin-lte/bootstrap/js/bootstrap.js"></script>	
+	<!-- endbuild -->	
+</head>
+<body class="skin-blue layout-top-nav">
+	<div class="wrapper">
+		<header class="main-header">
+			<!-- TOP NAVBAR -->
+			<nav class="navbar navbar-static-top">
+				<div class="container">
+					<div class="navbar-header">
+						<a href="index.html" class="navbar-brand"><b>ChatBy</b>Network</a>
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+							<i class="fa fa-bars"></i>
+						</button>
+					</div>
+
+					<!-- Navbar Right Menu -->
+					<div class="navbar-custom-menu">
+						<ul class="nav navbar-nav">
+							<li class="dropdown user user-menu open">
+								<!-- Menu Toggle Button -->
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+									<!-- The user image in the navbar-->
+									<img src="images/user1-128x128.jpg" class="user-image" alt="User Image">
+									<!-- hidden-xs hides the username on small devices so only the image appears. -->
+									<span class="hidden-xs">Alexander Pierce</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- /.navbar-custom-menu -->
+				</div>
+				<!-- /.container-fluid -->
+			</nav>
+		</header>
+		<!-- Full Width Column -->
+		<div class="content-wrapper" style="min-height: 523px;">
+			<div class="container">
+				<!-- Content Header (Page header) -->
+				<section class="content-header">
+					<h1>
+						ChatByNetwork
+						<small>Version 1.0</small>
+					</h1>
+				</section>
+
+				<!-- Main content -->
+				<section class="content">
+					<div class="row">
+						<!-- CHAT BOX -->
+						<div class="col-md-8">
+							<div class="box box-warning direct-chat direct-chat-warning">
+								<div class="box-header with-border">
+							    	<h3 class="box-title">Direct Chat</h3>
+							  	</div>
+							  	<!-- /.box-header -->	
+
+							  	<div class="box-body" style="display: blcok;">
+								  	<div class="direct-chat-messages">
+								  		<!-- LEFT(DEFAULT) EXAMPLE -->
+										<div class="direct-chat-msg">
+											<div class="direct-chat-info clearfix">
+												<span class="direct-chat-name pull-left">Alexander Pierce</span>
+												<span class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
+											</div>
+											<!-- /.direct-chat-info -->
+											<img class="direct-chat-img" src="images/user1-128x128.jpg" alt="message user image">
+											<!-- /.direct-chat-img -->
+											<div class="direct-chat-text">
+												Is this template really for free? That's unbelievable!
+												Do you believe me now??
+											</div>
+											<!-- /.direct-chat-text -->
+										</div>
+
+								  		<!-- RIGTH(ADD 'RIGHT' ON CLASS) EXAMPLE -->
+										<div class="direct-chat-msg right">
+											<div class="direct-chat-info clearfix">
+												<span class="direct-chat-name pull-left">Alexander Pierce</span>
+												<span class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
+											</div>
+											<!-- /.direct-chat-info -->
+											<img class="direct-chat-img" src="images/user1-128x128.jpg" alt="message user image">
+											<!-- /.direct-chat-img -->
+											<div class="direct-chat-text">
+												Is this template really for free? That's unbelievable!
+												Do you believe me now??
+											</div>
+											<!-- /.direct-chat-text -->
+										</div>							  		
+								  	</div>						
+							  	</div>
+							  	<!-- /.box-body -->
+
+							  	<div class="box-footer" style="display: block;">
+									<form action="#" method="post">
+										<div class="input-group">
+											<input type="text" name="message" placeholder="Type Message ..." class="form-control">
+											<span class="input-group-btn">
+												<button type="button" class="btn btn-warning btn-flat">Send</button>
+											</span>
+										</div>
+									</form>
+				                </div>
+				                <!-- /.box-footer -->
+							</div>
+						</div>
+						<!-- /.CHAT BOX -->
+
+						<!-- USERS BOX -->
+						<div class="col-md-4">
+							<div class="box box-info">
+								<div class="box-header with-border">
+									<h3 class="box-title">Lista de usuários</h3>
+								</div>
+								<!-- /.box-header -->
+								<div class="box-body">
+									<div class="table-responsive">
+										<table class="table no-margin">
+											<thead>
+												<tr>
+													<th>ID user</th>
+													<th>Name user</th>
+													<th>Status</th>
+												</tr>
+											</thead>
+											<tbody>
+												<!-- ONLINE EXAMPLE -->
+												<tr>
+													<td>OR9842</td>
+													<td>Call of Duty IV</td>
+													<td><span class="label label-success">Online</span></td>
+												</tr>
+												<!-- OFFLINE EXAMPLE -->
+												<tr>
+													<td>OR7429</td>
+													<td>iPhone 6 Plus</td>
+													<td><span class="label label-danger">Offline</span></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<!-- /.table-responsive -->
+								</div>
+								<!-- /.box-body -->
+								<div class="box-footer clearfix">
+									<a href="javascript:void(0)" class="btn btn-sm btn-default btn-flat pull-right">View All Orders</a>
+								</div>
+								<!-- /.box-footer -->
+							</div>
+						</div>
+						<!-- /.USERS BOX -->							
+
+				</section>
+				<!-- /.content -->
+			</div>
+			<!-- /.container -->
+		</div>
+		<!-- /.content-wrapper -->
+		<footer class="main-footer">
+			<div class="container">
+				<div class="pull-right hidden-xs">
+					<b>Version</b> 2.3.3
+				</div>
+				<strong>Copyright © 2014-2015 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights
+				reserved.
+			</div>
+			<!-- /.container -->
+		</footer>
+	</div>
+	<!-- ./wrapper -->
+</body>
+</html>
