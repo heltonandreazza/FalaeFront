@@ -1,9 +1,0 @@
-logs/*
-.gulp/*
-dist/
-app/node_modules
-!.gitkeep
-node_modules/
-tmp
-.DS_Store
-.idea

@@ -13,7 +13,6 @@ var imagemin = require('gulp-imagemin');
 var del = require('del');
 // run tasks in sequence plugins
 var runSequence = require('run-sequence');
-
 /*
 *	Start development mode
 */

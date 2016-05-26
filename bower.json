@@ -1,0 +1,15 @@
+{
+  "name": "chat-redes",
+  "description": "chat red",
+  "main": "index.js",
+  "authors": [
+    "helton.andreazza"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/heltonandreazza/chat-redes",
+  "devDependencies": {
+    "angular": "^1.5.5",
+    "AdminLTE": "admin-lte#^2.3.3",
+    "bootstrap": "^3.3.6"
+  }
+}
