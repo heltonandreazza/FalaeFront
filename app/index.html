@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ChatBy | Network</title>
+	<title>ChatBy | Falaê</title>
 	<!-- Tell the browser to be responsive to screen width -->
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
@@ -15,15 +15,8 @@
 	<link rel="stylesheet" href="vendor/adminLTE/dist/css/AdminLTE.css">
 	<link rel="stylesheet" href="vendor/adminLTE/dist/css/skins/skin-blue.css">
 	<!--endbuild-->	
-
-	<!-- build:js js/main.min.js -->
-	<script src="vendor/adminLTE/plugins/jQuery/jQuery-2.2.0.min.js"></script>
-	<script src="vendor/adminLTE/bootstrap/js/bootstrap.js"></script>	
-	<script src="vendor/angular/angular.js"></script>
-	<script src="js/MyAppCtrl.js"></script>	
-	<!-- endbuild -->	
 </head>
-<body ng-app="myApp" ng-controller="MyAppCtrl as app" class="skin-blue layout-top-nav">
+<body ng-app="myApp" class="skin-blue layout-top-nav">
 	<div class="wrapper">
 		<header class="main-header">
 			<!-- TOP NAVBAR -->
@@ -45,7 +38,7 @@
 									<!-- The user image in the navbar-->
 									<img src="images/user1-128x128.jpg" class="user-image" alt="User Image">
 									<!-- hidden-xs hides the username on small devices so only the image appears. -->
-									<span class="hidden-xs">Alexander Pierce</span>
+									<span class="hidden-xs">by helton | joão</span>
 								</a>
 							</li>
 						</ul>
@@ -61,138 +54,16 @@
 				<!-- Content Header (Page header) -->
 				<section class="content-header">
 					<h1>
-						ChatByNetwork
+						Falaê
 						<small>Version 1.0</small>
 					</h1>
 				</section>
 
-				<!-- Login -->
-				<section class="content" ng-show="!app.showChat">
-					<div class="row">
-						<div class="col-md-3"></div>
-						<div class="col-md-6">
-							<div class="box box-info">
-								<div class="box-header with-border">
-									<h3 class="box-title">Login</h3>
-								</div>
-								<!-- /.box-header -->
-								<form class="form-horizontal">
-									<div class="box-body">
-										<div class="form-group">
-											<label class="col-sm-2 control-label">Usuário</label>
-
-											<div class="col-sm-10">
-												<input class="form-control" 
-													placeholder="Informe o id do usuário ..." 
-													ng-model="app.myUser.id">
-											</div>
-										</div>
-										<div class="form-group">
-											<label class="col-sm-2 control-label">Password</label>
-
-											<div class="col-sm-10">
-												<input type="password" 
-													class="form-control" 
-													placeholder="Informe a senha do usuário ..." 
-													ng-model="app.myUser.password">
-											</div>
-										</div>
-									</div>
-									<!-- /.box-body -->
-									<div class="box-footer">
-										<button type="button" ng-click="app.login()" class="btn btn-info pull-right">Sign in</button>
-									</div>
-									<!-- /.box-footer -->
-								</form>
-							</div>
-							
-						</div>
-					</div>
-				</section>
-
-				<!-- Main content -->
-				<section class="content" ng-show="app.showChat">
-					<div class="row">
-						<!-- CHAT BOX -->
-						<div class="col-md-8">
-							<div class="box box-warning direct-chat direct-chat-warning">
-								<div class="box-header with-border">
-									<h3 class="box-title">Direct Chat</h3>
-								</div>
-								<!-- /.box-header -->	
-
-								<div class="box-body" style="display: block;">
-									<div class="direct-chat-messages" chat>
-										<div id="space-for-messages"></div>
-									</div>
-								</div>
-								<!-- /.box-body -->
-
-								<div class="box-footer" style="display: block;">
-									<form action="#" method="post">
-										<div class="input-group">
-											<input type="text" 
-											name="message" 
-											placeholder="Type Message ..." 
-											class="form-control"
-											ng-model="app.myUser.sendMessage">
-
-											<span class="input-group-btn">
-												<button type="button" class="btn btn-warning btn-flat" ng-click="app.sendMessage(app.myUser, app.myUser.sendMessage)">Send</button>
-											</span>
-										</div>
-									</form>
-								</div>
-								<!-- /.box-footer -->
-							</div>
-						</div>
-						<!-- /.CHAT BOX -->
-
-						<!-- USERS BOX -->
-						<div class="col-md-4">
-							<div class="box box-info">
-								<div class="box-header with-border">
-									<h3 class="box-title">Users</h3>
-								</div>
-								<!-- /.box-header -->
-								<div class="box-body">
-									<div class="table-responsive">
-										<table class="table no-margin">
-											<thead>
-												<tr>
-													<th><div><input type="checkbox" ng-model="app.selectAll"></th>
-													<th>User</th>
-													<th>Name user</th>
-													<th>Wins</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr ng-repeat="user in app.users">
-													<td><input type="checkbox" ng-model="user.select"></td>
-													<td>{{ user.id }}</td>
-													<td>{{ user.name }}</td>
-													<td>{{ user.wins }}</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-								<!-- /.table-responsive -->
-							</div>
-							<!-- /.box-body -->
-							<div class="box-footer clearfix">
-								<a href="javascript:void(0)" class="btn btn-sm btn-default btn-flat pull-right">View All Orders</a>
-							</div>
-							<!-- /.box-footer -->
-						</div>
-					</div>
-					<!-- /.USERS BOX -->							
-
-				</section>
-				<!-- /.content -->
+				<div ng-view></div>
 			</div>
-			<!-- /.container -->
 		</div>
 		<!-- /.content-wrapper -->
+
 		<footer class="main-footer">
 			<div class="container">
 				<div class="pull-right hidden-xs">
@@ -205,5 +76,16 @@
 		</footer>
 	</div>
 	<!-- ./wrapper -->
+
+	<!-- build:js js/main.min.js -->
+	<script src="vendor/adminLTE/plugins/jQuery/jQuery-2.2.0.min.js"></script>
+	<script src="vendor/adminLTE/bootstrap/js/bootstrap.js"></script>	
+	<script src="vendor/angular/angular.js"></script>
+	<script src="vendor/angular-route/angular-route.js"></script>
+	<script src="app.js"></script>
+	<script src="js/_services.js"></script>
+	<script src="js/_controllers.js"></script>
+	<!-- endbuild -->	
+
 </body>
 </html>
